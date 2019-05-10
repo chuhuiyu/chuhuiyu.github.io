@@ -4,50 +4,6 @@
   
     
     <entry>
-      <title>testcate3</title>
-      <link href="/2019/05/10/testcate3/"/>
-      <url>/2019/05/10/testcate3/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 1 </category>
-          
-          <category> 2 </category>
-          
-          <category> 3 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>testcate2</title>
-      <link href="/2019/05/10/testcate2/"/>
-      <url>/2019/05/10/testcate2/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 2 </category>
-          
-          <category> 3 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>testcate</title>
       <link href="/2019/05/10/testcate/"/>
       <url>/2019/05/10/testcate/</url>
@@ -57,7 +13,7 @@
       
       <categories>
           
-          <category> 1 </category>
+          <category> cs </category>
           
       </categories>
       
@@ -74,6 +30,14 @@
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> cs </category>
+          
+          <category> c++ </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -86,6 +50,14 @@
       
         <content type="html"><![CDATA[<h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello, world!"></a>Hello, world!</h1><p>This page is the beginning of my blog!</p><p>I will write my learning note in  <strong>computer science</strong> and <strong>philosophy</strong> here!</p>]]></content>
       
+      
+      <categories>
+          
+          <category> cs </category>
+          
+          <category> begin </category>
+          
+      </categories>
       
       
     </entry>
