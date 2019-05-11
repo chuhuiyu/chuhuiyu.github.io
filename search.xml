@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>highlight_test</title>
+      <link href="/2019/05/11/hightlight-test/"/>
+      <url>/2019/05/11/hightlight-test/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Highlight"><a href="#Highlight" class="headerlink" title="Highlight"></a>Highlight</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>testcate</title>
       <link href="/2019/05/10/testcate/"/>
       <url>/2019/05/10/testcate/</url>
