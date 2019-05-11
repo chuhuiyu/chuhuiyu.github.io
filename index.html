@@ -290,6 +290,183 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Apothustra">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ChuHuiyu's Blog :DDD">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/11/Intro2-Computer-Neuronscience-w1/" itemprop="url">Intro2 Computer Neuronscience-w1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-11T16:20:40+08:00">
+                2019-05-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Computer-Neuronscience/" itemprop="url" rel="index">
+                    <span itemprop="name">Computer Neuronscience</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>[TOC]</p>
+<h2 id="1-使用Python作科学计算-scientific-python"><a href="#1-使用Python作科学计算-scientific-python" class="headerlink" title="1. 使用Python作科学计算(scientific python)"></a>1. 使用Python作科学计算(scientific python)</h2><ul>
+<li>在scripts前习惯添加如下代码 :</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> division</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用 pickle module 读取数据：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pickle</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">'stim'</span>: np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]), <span class="string">'response'</span>: np.array([<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>])&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'my_data.pickle'</span>,<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    pickle.dump(data,f)</span><br><span class="line">    </span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'my_data.pickle'</span>,<span class="string">'rb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	new_data = pickle.load(f)</span><br></pre></td></tr></table></figure>
+<h2 id="2-Models-used-in-CN"><a href="#2-Models-used-in-CN" class="headerlink" title="2. Models used in CN"></a>2. Models used in CN</h2><h3 id="Models"><a href="#Models" class="headerlink" title="Models"></a>Models</h3><ul>
+<li>Desciptive Models—— what nervous system do</li>
+<li>Mechnistic Models——how they function</li>
+<li>Interpretive Models——why they operate in particular ways</li>
+</ul>
+<h3 id="Receptive-Fields-Experiment"><a href="#Receptive-Fields-Experiment" class="headerlink" title="Receptive Fields.Experiment"></a>Receptive Fields.Experiment</h3><p>Example to explain: ——Receptive Fields</p>
+<p>​    Hubel and Wiesel, c. 1965    </p>
+<p>​    <img src="C:\Users\chuhu\AppData\Roaming\Typora\typora-user-images\1557565822760.png" alt="1557565822760"></p>
+<p>​        showed that the cat’s cell responded rebustly when the bar of light oriented at 45° </p>
+<p><img src="C:\Users\chuhu\AppData\Roaming\Typora\typora-user-images\1557566193300.png" alt="1557566193300"></p>
+<p>​    感受野，感受器受刺激兴奋时，通过感受器官中的向心神经元将神经冲动（各种感觉信息）传到上位中枢，一个神经元所反应（支配）的刺激区域就叫做神经元的感受野（receptive field）【受纳野】。</p>
+<h3 id="Receptive-Fields-Models"><a href="#Receptive-Fields-Models" class="headerlink" title="Receptive Fields.Models"></a>Receptive Fields.Models</h3><ul>
+<li><p>Desp</p>
+<ul>
+<li><p>Retina 视网膜</p>
+<p>layer of tissue back of your eyes</p>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Mach</p>
+</li>
+<li><p>Interp</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/11/World/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -468,7 +645,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -479,7 +656,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -490,7 +667,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
