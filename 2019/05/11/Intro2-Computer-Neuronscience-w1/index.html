@@ -125,13 +125,18 @@
 <meta property="og:site_name" content="ChuHuiyu&#39;s Blog :DDD">
 <meta property="og:description" content="[TOC] 1. 使用Python作科学计算(scientific python) 在scripts前习惯添加如下代码 :  123from __future__ import divisionimport numpy as npimport matplotlib.pyplot as plt  使用 pickle module 读取数据：  123456789import pickledata =">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="c:/Users/chuhu/AppData/Roaming/Typora/typora-user-images/1557565822760.png">
-<meta property="og:image" content="c:/Users/chuhu/AppData/Roaming/Typora/typora-user-images/1557566193300.png">
-<meta property="og:updated_time" content="2019-05-11T09:42:34.268Z">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w1/001.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w1/002.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w1/005.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w1/006.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w1/008.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w1/009.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w1/010.png">
+<meta property="og:updated_time" content="2019-05-11T13:32:59.289Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Intro2 Computer Neuronscience-w1">
 <meta name="twitter:description" content="[TOC] 1. 使用Python作科学计算(scientific python) 在scripts前习惯添加如下代码 :  123from __future__ import divisionimport numpy as npimport matplotlib.pyplot as plt  使用 pickle module 读取数据：  123456789import pickledata =">
-<meta name="twitter:image" content="c:/Users/chuhu/AppData/Roaming/Typora/typora-user-images/1557565822760.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w1/001.png">
 
 
 
@@ -394,31 +399,58 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pickle</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">'stim'</span>: np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]), <span class="string">'response'</span>: np.array([<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>])&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'my_data.pickle'</span>,<span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    pickle.dump(data,f)</span><br><span class="line">    </span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'my_data.pickle'</span>,<span class="string">'rb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">	new_data = pickle.load(f)</span><br></pre></td></tr></table></figure>
 <h2 id="2-Models-used-in-CN"><a href="#2-Models-used-in-CN" class="headerlink" title="2. Models used in CN"></a>2. Models used in CN</h2><h3 id="Models"><a href="#Models" class="headerlink" title="Models"></a>Models</h3><ul>
 <li>Desciptive Models—— what nervous system do</li>
-<li>Mechnistic Models——how they function</li>
+<li>Mechanistic Models——how they function</li>
 <li>Interpretive Models——why they operate in particular ways</li>
 </ul>
 <h3 id="Receptive-Fields-Experiment"><a href="#Receptive-Fields-Experiment" class="headerlink" title="Receptive Fields.Experiment"></a>Receptive Fields.Experiment</h3><p>Example to explain: ——Receptive Fields</p>
 <p>​    Hubel and Wiesel, c. 1965    </p>
-<p>​    <img src="C:\Users\chuhu\AppData\Roaming\Typora\typora-user-images\1557565822760.png" alt="1557565822760"></p>
-<p>​        showed that the cat’s cell responded rebustly when the bar of light oriented at 45° </p>
-<p><img src="C:\Users\chuhu\AppData\Roaming\Typora\typora-user-images\1557566193300.png" alt="1557566193300"></p>
+<p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w1/001.png" alt></p>
+<p>​        showed that the cat’s cell responded robustly when the bar of light oriented at 45° </p>
 <p>​    感受野，感受器受刺激兴奋时，通过感受器官中的向心神经元将神经冲动（各种感觉信息）传到上位中枢，一个神经元所反应（支配）的刺激区域就叫做神经元的感受野（receptive field）【受纳野】。</p>
+<p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w1/002.png" alt></p>
 <h3 id="Receptive-Fields-Models"><a href="#Receptive-Fields-Models" class="headerlink" title="Receptive Fields.Models"></a>Receptive Fields.Models</h3><ul>
-<li><p>Desp</p>
+<li><p>Desription</p>
+<ol>
+<li>Retina 视网膜</li>
+</ol>
+<p>layer of tissue back of your eyes(retinal ganglion cells[视网膜神经节细胞] there)</p>
+<ol start="2">
+<li><p>Lateral Geniculate Nucleus(LGN)[外侧膝状体]</p>
+</li>
+<li><p>the Primary Visual Cortex(V1)[初级视皮层]</p>
+<p>意即通过实验发现视网膜和V1处的细胞有不同的感受野，这是一种<strong>科学发现</strong>,发现其<strong>形式因</strong></p>
+</li>
+</ol>
+</li>
+</ul>
+<pre><code>![](/Intro2-Computer-Neuronscience-w1/004.png)
+</code></pre><p>  <img src="/2019/05/11/Intro2-Computer-Neuronscience-w1/005.png" alt></p>
 <ul>
-<li><p>Retina 视网膜</p>
-<p>layer of tissue back of your eyes</p>
+<li><p>Machanical</p>
+<p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w1/006.png" alt></p>
+<p>解剖学(anatomy)发现众多的LGN细胞连接到独立的V1细胞，Hubel&amp;Wiesel则推测V1 cell感受野的变形是由于不同LGN细胞的前馈输入叠加。(feed-forward input)</p>
+<p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w1/008.png" alt></p>
+<p>这种模型提供了一种<strong>科学解释</strong>，解释其<strong>动力因</strong></p>
+</li>
+</ul>
 <ul>
-<li></li>
+<li>Interpretive Model</li>
 </ul>
-</li>
-</ul>
-</li>
-<li><p>Mach</p>
-</li>
-<li><p>Interp</p>
-</li>
-</ul>
+<p>为什么V1细胞要长成这个鬼样？这种interpretive model解释了其<strong>目的因</strong></p>
+<p>进化论的角度：为了表达客观世界图象更加的真实、更加有效</p>
+<p>（represent images as faithfully and as efficiently as possible)</p>
+<p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w1/009.png" alt></p>
+<p>验证模型的正确性：</p>
+<p>建模：</p>
+<pre><code>* 输入：自然图象
+* I^ = (自己构造的RFi)*wi
+* 将I^ 与输入的 I 对比，比较二者灰度值的差异
+* 找到最有效率、最优的RFi
+</code></pre><p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w1/010.png" alt></p>
+<h2 id="3-Conclusion"><a href="#3-Conclusion" class="headerlink" title="3. Conclusion"></a>3. Conclusion</h2><p>亚里士多德针对认识论提出了“四因说”：每个对象都有其“形式因”，“质料因”，“动力因”，“目的因”</p>
+<p>人类再怎么发展，终究逃不开千年前先哲的思想，只因为他们站在技能树的根部，由他们才分化出哲学、科学出来……</p>
+<p>CN的三个模型，DESP研究形式因和质料因，MACHA研究动力因，INTERP研究目的因，如此罢了。</p>
+<p>重要的还是对自己的模型进行验证:)</p>
 
       
     </div>
@@ -615,7 +647,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-使用Python作科学计算-scientific-python"><span class="nav-number">1.</span> <span class="nav-text">1. 使用Python作科学计算(scientific python)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Models-used-in-CN"><span class="nav-number">2.</span> <span class="nav-text">2. Models used in CN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Models"><span class="nav-number">2.1.</span> <span class="nav-text">Models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Receptive-Fields-Experiment"><span class="nav-number">2.2.</span> <span class="nav-text">Receptive Fields.Experiment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Receptive-Fields-Models"><span class="nav-number">2.3.</span> <span class="nav-text">Receptive Fields.Models</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-使用Python作科学计算-scientific-python"><span class="nav-number">1.</span> <span class="nav-text">1. 使用Python作科学计算(scientific python)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Models-used-in-CN"><span class="nav-number">2.</span> <span class="nav-text">2. Models used in CN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Models"><span class="nav-number">2.1.</span> <span class="nav-text">Models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Receptive-Fields-Experiment"><span class="nav-number">2.2.</span> <span class="nav-text">Receptive Fields.Experiment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Receptive-Fields-Models"><span class="nav-number">2.3.</span> <span class="nav-text">Receptive Fields.Models</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Conclusion"><span class="nav-number">3.</span> <span class="nav-text">3. Conclusion</span></a></li></ol></div>
             
 
           </div>
