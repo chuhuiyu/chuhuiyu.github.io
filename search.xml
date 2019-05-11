@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Intro2-Computer-Neuronscience-w2</title>
+      <link href="/2019/05/11/Intro2-Computer-Neuronscience-w2/"/>
+      <url>/2019/05/11/Intro2-Computer-Neuronscience-w2/</url>
+      
+        <content type="html"><![CDATA[<p>[TOC]</p><h1 id="Neural-Code"><a href="#Neural-Code" class="headerlink" title="Neural Code"></a>Neural Code</h1><ul><li>tech for recording from the brain(fmra…)</li><li>tools discovering how brain repre info</li><li>model express our understanding of this repre</li><li>some methods for inferring what the brain is doing based on its activity(in w3)</li><li>using <strong>information theory</strong> to quantify neural repre(in w4)</li><li>biophysical basis of how the brain process inputs and performs complex computations(in w5)</li></ul><h2 id="Recoding"><a href="#Recoding" class="headerlink" title="Recoding"></a>Recoding</h2><ul><li>fMRI </li><li>EEG ——electroencephalography<ul><li>faster response</li></ul></li><li></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Computer Neuronscience </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Computer Neuronscience </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Intro2 Computer Neuronscience-w1</title>
       <link href="/2019/05/11/Intro2-Computer-Neuronscience-w1/"/>
       <url>/2019/05/11/Intro2-Computer-Neuronscience-w1/</url>
