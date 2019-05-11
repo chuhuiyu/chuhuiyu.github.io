@@ -125,7 +125,7 @@
 <meta property="og:site_name" content="ChuHuiyu&#39;s Blog :DDD">
 <meta property="og:description" content="[TOC] Neural Code tech for recording from the brain(fmra…) tools discovering how brain repre info model express our understanding of this repre some methods for inferring what the brain is doing based">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-11T15:17:53.676Z">
+<meta property="og:updated_time" content="2019-05-11T15:47:08.858Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Intro2-Computer-Neuronscience-w2">
 <meta name="twitter:description" content="[TOC] Neural Code tech for recording from the brain(fmra…) tools discovering how brain repre info model express our understanding of this repre some methods for inferring what the brain is doing based">
@@ -362,7 +362,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2019/05/11/Intro2-Computer-Neuronscience-w2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/11/Intro2-Computer-Neuronscience-w2/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/11/Intro2-Computer-Neuronscience-w2/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -495,14 +495,7 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
     </div>
-
   
 
 
@@ -814,26 +807,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://XY.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/';
-          this.page.identifier = '2019/05/11/Intro2-Computer-Neuronscience-w2/';
-          this.page.title = 'Intro2-Computer-Neuronscience-w2';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://XY.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -849,12 +822,38 @@
 
 
 
+  
 
 
 
 
 
 
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'tOUxYCM1Tfrwg8Ubf4260Srt-gzGzoHsz',
+        appKey: 'YKjhsJOWjyqTrjxzpwoNMOO2',
+        placeholder: 'leave your comment~',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
