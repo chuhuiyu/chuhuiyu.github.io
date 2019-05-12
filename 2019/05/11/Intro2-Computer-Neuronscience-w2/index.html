@@ -131,7 +131,9 @@
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/004.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/005.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/006.png">
-<meta property="og:updated_time" content="2019-05-12T03:33:27.906Z">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/007.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/008.png">
+<meta property="og:updated_time" content="2019-05-12T07:44:45.491Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Intro2-Computational-Neuroscience-w2">
 <meta name="twitter:description" content="[TOC] Neural Code tech for recording from the brain(fmra…) tools discovering how brain repre info model express our understanding of this repre some methods for inferring what the brain is doing based">
@@ -454,24 +456,26 @@
 <p>​    (top-down effects)(semantic expectations)</p>
 <p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/003.png" alt></p>
 <p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/004.png" alt></p>
-<h2 id="basic-coding-model-temporal-filtering-短时过滤-or-时域滤波"><a href="#basic-coding-model-temporal-filtering-短时过滤-or-时域滤波" class="headerlink" title="basic coding model: temporal filtering-短时过滤 or 时域滤波"></a>basic coding model: temporal filtering-短时过滤 or 时域滤波</h2><p>$ P(response | stimulus) $</p>
+<h2 id="coding-model"><a href="#coding-model" class="headerlink" title="coding model"></a>coding model</h2><h3 id="linear-filtering"><a href="#linear-filtering" class="headerlink" title="linear filtering"></a>linear filtering</h3><h4 id="basic-coding-model-temporal-filtering-短时过滤-or-时域滤波"><a href="#basic-coding-model-temporal-filtering-短时过滤-or-时域滤波" class="headerlink" title="basic coding model: temporal filtering-短时过滤 or 时域滤波"></a>basic coding model: temporal filtering-短时过滤 or 时域滤波</h4><p>$ P(response | stimulus) $</p>
 <p>response: a single spike produced by a chosen neuron</p>
 <p>$ r(t) $ : the probability seeing a spike at a certain time(firing rate)</p>
-<p>建模过程：</p>
-<ul>
-<li><p>temporal filtering</p>
 <p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/005.png" alt></p>
-</li>
-</ul>
 <ol>
 <li>$ r(t)  =  {\phi} \,s(t)$ or $ r(t)  =  {\phi}\, s(t-{\tau})$</li>
 <li>$ r(t) =  \sum_{k=0}^n\; s_{t-k}\, f_k$ or integral form: $ r(t) =  \int_{-\infty}^t\, d\tau \, s(t-\tau) \, f(\tau)$<br>EG1：<br>f(t) = 1/T<br>EG2：<br>f(t) = $ e^{t} $</li>
 </ol>
-<h2 id="basic-coding-model-spatial-filtering"><a href="#basic-coding-model-spatial-filtering" class="headerlink" title="basic coding model: spatial filtering"></a>basic coding model: spatial filtering</h2><p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/006.png" alt></p>
+<h4 id="basic-coding-model-spatial-filtering"><a href="#basic-coding-model-spatial-filtering" class="headerlink" title="basic coding model: spatial filtering"></a>basic coding model: spatial filtering</h4><p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/006.png" alt></p>
 <p>很容易推出对于r(t)描述的空间模型：</p>
 <p>​    $ r(t)  = \sum_{x’=-n,y’=-n}^{x’=n,y’=n}\, s_{x-x’,y-y’}\, f_{x’,y’}$</p>
 <p>or r(t)  = $ \int_{-\infty}^{\infty}\,dx’dy’s(x-x’,y-y’)f_{x’,y’} $</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vacabulary list:</span><br><span class="line">  - calcium n. 钙</span><br><span class="line">  - florescent / flourescent a. 荧光的</span><br><span class="line">  - florescent property 荧光物质</span><br><span class="line">  - clamp 夹具 a device holds two things firmly together</span><br><span class="line">  - integral 积分的</span><br></pre></td></tr></table></figure>
+<h4 id="basic-coding-model-spatiotemporal-filtering"><a href="#basic-coding-model-spatiotemporal-filtering" class="headerlink" title="basic coding model: spatiotemporal filtering"></a>basic coding model: spatiotemporal filtering</h4><p>$ r_{x,y}(t) = \int!\int!\int dx’dy’d\tau \, f(x’,y’,\tau) s(x-x’,y-y’,t-\tau)$</p>
+<p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/007.png" alt></p>
+<h3 id="standardized-linear-filtering"><a href="#standardized-linear-filtering" class="headerlink" title="standardized linear filtering"></a>standardized linear filtering</h3><p>Linear filter &amp; nonlinearity :$ r_{x,y}(t) = g\left(\int!\int!\int dx’dy’d\tau \, f(x’,y’,\tau) s(x-x’,y-y’,t-\tau)\right)$</p>
+<h2 id="Feature-Selection"><a href="#Feature-Selection" class="headerlink" title="Feature Selection"></a>Feature Selection</h2><p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/008.png" alt></p>
+<ul>
+<li>Gaussian white noise</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vacabulary list:</span><br><span class="line">  - calcium n. 钙</span><br><span class="line">  - florescent / flourescent a. 荧光的</span><br><span class="line">  - florescent property 荧光物质</span><br><span class="line">  - clamp 夹具 a device holds two things firmly together</span><br><span class="line">  - integral 积分的</span><br><span class="line">  - map...onto  map the filtered stimulus onto the firing rate.</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -671,7 +675,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Neural-Code"><span class="nav-number">1.</span> <span class="nav-text">Neural Code</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Recording"><span class="nav-number">1.1.</span> <span class="nav-text">Recording</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#what-is-the-neural-code？"><span class="nav-number">1.2.</span> <span class="nav-text">what is the neural code？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#basic-coding-model-temporal-filtering-短时过滤-or-时域滤波"><span class="nav-number">1.3.</span> <span class="nav-text">basic coding model: temporal filtering-短时过滤 or 时域滤波</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#basic-coding-model-spatial-filtering"><span class="nav-number">1.4.</span> <span class="nav-text">basic coding model: spatial filtering</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Neural-Code"><span class="nav-number">1.</span> <span class="nav-text">Neural Code</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Recording"><span class="nav-number">1.1.</span> <span class="nav-text">Recording</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#what-is-the-neural-code？"><span class="nav-number">1.2.</span> <span class="nav-text">what is the neural code？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#coding-model"><span class="nav-number">1.3.</span> <span class="nav-text">coding model</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-filtering"><span class="nav-number">1.3.1.</span> <span class="nav-text">linear filtering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#basic-coding-model-temporal-filtering-短时过滤-or-时域滤波"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">basic coding model: temporal filtering-短时过滤 or 时域滤波</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#basic-coding-model-spatial-filtering"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">basic coding model: spatial filtering</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#basic-coding-model-spatiotemporal-filtering"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">basic coding model: spatiotemporal filtering</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#standardized-linear-filtering"><span class="nav-number">1.3.2.</span> <span class="nav-text">standardized linear filtering</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Feature-Selection"><span class="nav-number">1.4.</span> <span class="nav-text">Feature Selection</span></a></li></ol></li></ol></div>
             
 
           </div>
