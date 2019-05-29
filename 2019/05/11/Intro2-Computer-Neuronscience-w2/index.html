@@ -117,16 +117,19 @@
 
 
 
-<meta name="description" content="[TOC] Neural Code technique for recording from the brain(fMRA…) tools discovering how brain represent information model express our understanding of this representation some methods for inferring what">
+<meta name="description" content="[TOC] Neural Code课程的第一个部分，由于神经科学在理解大脑处理感官信息方面比较成熟，因此将从这一方面入手。  technique for recording from the brain(fMRA…) tools discovering how brain represent information model express our understanding of this r">
 <meta name="keywords" content="Computational Neuroscience">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Intro2-Computational-Neuroscience-w2">
 <meta property="og:url" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/index.html">
 <meta property="og:site_name" content="ChuHuiyu&#39;s Blog :DDD">
-<meta property="og:description" content="[TOC] Neural Code technique for recording from the brain(fMRA…) tools discovering how brain represent information model express our understanding of this representation some methods for inferring what">
+<meta property="og:description" content="[TOC] Neural Code课程的第一个部分，由于神经科学在理解大脑处理感官信息方面比较成熟，因此将从这一方面入手。  technique for recording from the brain(fMRA…) tools discovering how brain represent information model express our understanding of this r">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/001.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/002.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/010.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/011.png">
+<meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/012.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/003.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/004.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/005.png">
@@ -134,10 +137,10 @@
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/007.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/009.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/008.png">
-<meta property="og:updated_time" content="2019-05-13T04:46:14.392Z">
+<meta property="og:updated_time" content="2019-05-13T15:16:01.531Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Intro2-Computational-Neuroscience-w2">
-<meta name="twitter:description" content="[TOC] Neural Code technique for recording from the brain(fMRA…) tools discovering how brain represent information model express our understanding of this representation some methods for inferring what">
+<meta name="twitter:description" content="[TOC] Neural Code课程的第一个部分，由于神经科学在理解大脑处理感官信息方面比较成熟，因此将从这一方面入手。  technique for recording from the brain(fMRA…) tools discovering how brain represent information model express our understanding of this r">
 <meta name="twitter:image" content="http://yoursite.com/2019/05/11/Intro2-Computer-Neuronscience-w2/001.png">
 
 
@@ -406,7 +409,8 @@
 
       
         <p>[TOC]</p>
-<h1 id="Neural-Code"><a href="#Neural-Code" class="headerlink" title="Neural Code"></a>Neural Code</h1><ul>
+<h1 id="Neural-Code"><a href="#Neural-Code" class="headerlink" title="Neural Code"></a>Neural Code</h1><p>课程的第一个部分，由于神经科学在理解大脑处理感官信息方面比较成熟，因此将从这一方面入手。</p>
+<ul>
 <li>technique for recording from the brain(fMRA…)</li>
 <li>tools discovering how brain represent information</li>
 <li>model express our understanding of this representation</li>
@@ -414,7 +418,8 @@
 <li>using <strong>information theory</strong> to quantify neural representation(in w4)</li>
 <li>biophysical basis of how the brain process inputs and performs complex computations(in w5)</li>
 </ul>
-<h2 id="Recording"><a href="#Recording" class="headerlink" title="Recording"></a>Recording</h2><ul>
+<h2 id="Recording"><a href="#Recording" class="headerlink" title="Recording"></a>Recording</h2><p><strong>outside the cell:</strong></p>
+<ul>
 <li>fMRI </li>
 <li>EEG ——electroencephalography<ul>
 <li>faster response</li>
@@ -427,7 +432,7 @@
 <li>electrode arrays</li>
 <li>calcium imaging 钙离子荧光染色？神经冲动时钙离子内流，荧光强度代表活动强度</li>
 </ul>
-<p>looking inside single cells:</p>
+<p><strong>looking inside single cells:</strong></p>
 <ul>
 <li><p>patch electrodes</p>
 <p>direct contact with inside of the cell</p>
@@ -439,6 +444,14 @@
 <li><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/002.png" alt></li>
 </ul>
 <p>[input]photoreceptors(rods and columns) -&gt;successive layers of cells-&gt;[output]retinal ganglion cells-&gt;optic track(视神经束)-&gt;rest of the brain</p>
+<p>一个实验：</p>
+<p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/010.png" alt>    </p>
+<p>将视网膜神经节细胞用营养液养好，下面铺着记录每个细胞spike与否的electrode array，然后给他们放电影看:D</p>
+<p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/011.png" alt></p>
+<p>并且放很多遍，每遍都把该细胞兴奋的时间点标记出来，综合到上面一张图里，发现同一细胞兴奋点还真是差不多。。。像鱼吐泡泡一样。。。</p>
+<p>然后把所有细胞的图绘制如下：</p>
+<p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/012.png" alt></p>
+<p>发现不同细胞都在对电影片段不同的细节进行编码（encoding)，传送到大脑更高级的部位里。每个细胞都像是一个小电脑在高速编程……把外界信息处理成大脑可以理解的电信号。amazing.</p>
 <ul>
 <li><p>Encoding: P(response|stimulus)</p>
 <p>how does stimulus create a pattern of responses?</p>
@@ -453,7 +466,7 @@
 <p>大脑对刺激反应的复杂度：</p>
 <p>Geometric to semantic :从几何的到有语义的</p>
 <p>interconnect: retina/LGN receives a massive amount of feedback from all these areas</p>
-<p>​    expectation: <strong>what you think you’re looking at can shape what you actually see.</strong>(康德的认识论)</p>
+<p>​    expectation: <strong>what you think you’re looking at can shape what you actually see.</strong>(康德的认识论！)</p>
 <p>​    (top-down effects)(semantic expectations)</p>
 <p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/003.png" alt></p>
 <p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/004.png" alt></p>
@@ -463,13 +476,13 @@
 <p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/005.png" alt></p>
 <ol>
 <li>$ r(t)  =  {\phi} \,s(t)$ or $ r(t)  =  {\phi}\, s(t-{\tau})$</li>
-<li>$ r(t) =  \sum_{k=0}^n\; s_{t-k}\, f_k$ or integral form: $ r(t) =  \int_{-\infty}^t\, d\tau \, s(t-\tau) \, f(\tau)$<br>EG1：<br>f(t) = 1/T<br>EG2：<br>f(t) = $ e^{t} $</li>
+<li>$ r(t) =  \displaystyle\sum\limits_{k=0}^n\; s_{t-k}\, f_k$ or integral form: $ r(t) =  \int_{-\infty}^t\, d\tau \, s(t-\tau) \, f(\tau)$<br>EG1：<br>f(t) = 1/T<br>EG2：<br>f(t) = $ e^{t} $</li>
 </ol>
 <h4 id="basic-coding-model-spatial-filtering-空间滤镜"><a href="#basic-coding-model-spatial-filtering-空间滤镜" class="headerlink" title="basic coding model: spatial filtering-空间滤镜"></a>basic coding model: spatial filtering-空间滤镜</h4><p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/006.png" alt></p>
 <p>很容易推出对于r(t)描述的空间模型：</p>
 <p>​    $ r(t)  = \sum_{x’=-n,y’=-n}^{x’=n,y’=n}\, s_{x-x’,y-y’}\, f_{x’,y’}$</p>
 <p>or r(t)  = $ \int_{-\infty}^{\infty}\,dx’dy’s(x-x’,y-y’)f_{x’,y’} $</p>
-<h4 id="basic-coding-model-spatiotemporal-filtering-时空滤镜"><a href="#basic-coding-model-spatiotemporal-filtering-时空滤镜" class="headerlink" title="basic coding model: spatiotemporal filtering -时空滤镜"></a>basic coding model: spatiotemporal filtering -时空滤镜</h4><p>$ r_{x,y}(t) = \int!\int!\int dx’dy’d\tau \, f(x’,y’,\tau) s(x-x’,y-y’,t-\tau)$</p>
+<h4 id="basic-coding-model-spatiotemporal-filtering-时空滤镜"><a href="#basic-coding-model-spatiotemporal-filtering-时空滤镜" class="headerlink" title="basic coding model: spatiotemporal filtering -时空滤镜"></a>basic coding model: spatiotemporal filtering -时空滤镜</h4><p>$ r_{x,y}(t) = \displaystyle\int!\int!\int dx’dy’d\tau \, f(x’,y’,\tau) s(x-x’,y-y’,t-\tau)$</p>
 <p><img src="/2019/05/11/Intro2-Computer-Neuronscience-w2/007.png" alt></p>
 <h3 id="Standardized-linear-filtering"><a href="#Standardized-linear-filtering" class="headerlink" title="Standardized linear filtering"></a>Standardized linear filtering</h3><p>Linear filter &amp; nonlinearity :$ r_{x,y}(t) = g\left(\int!\int!\int dx’dy’d\tau \, f(x’,y’,\tau) s(x-x’,y-y’,t-\tau)\right)$</p>
 <h3 id="Conclusion-of-basic-coding-model"><a href="#Conclusion-of-basic-coding-model" class="headerlink" title="Conclusion of basic coding model"></a>Conclusion of basic coding model</h3><ol>
@@ -542,6 +555,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/30/Information-Theory-4/" rel="prev" title="Information Theory -4">
+                Information Theory -4 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -623,7 +640,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -634,7 +651,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -645,7 +662,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
