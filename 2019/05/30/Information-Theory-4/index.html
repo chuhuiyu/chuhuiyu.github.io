@@ -106,7 +106,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Information Theory,">
 
 
 
@@ -118,6 +118,7 @@
 
 
 <meta name="description" content="抗干扰二元编码原理及方法[TOC] 4.1 抗干扰编码的基本原理4.1.1 编码和纠错能力的关系 只检测e个错：最小码距：$d_{min} &amp;gt;=e+1$   助记：假设就检测一个错，而最小码距是1，那根本无法检测错误，因此至少e+1 解释:  设一码组A位于O点，另一码组B与A最小码距为d0。当A码组发生e个误码时，可以认为A的位置将移动到以O为圆心、以e为半径的圆上，但其位置不会超出此圆。">
+<meta name="keywords" content="Information Theory">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Information Theory -4">
 <meta property="og:url" content="http://yoursite.com/2019/05/30/Information-Theory-4/index.html">
@@ -127,7 +128,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/05/30/Information-Theory-4/001.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/30/Information-Theory-4/002.png">
 <meta property="og:image" content="http://yoursite.com/2019/05/30/Information-Theory-4/003.png">
-<meta property="og:updated_time" content="2019-05-29T18:14:17.837Z">
+<meta property="og:updated_time" content="2019-05-30T05:53:09.020Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Information Theory -4">
 <meta name="twitter:description" content="抗干扰二元编码原理及方法[TOC] 4.1 抗干扰编码的基本原理4.1.1 编码和纠错能力的关系 只检测e个错：最小码距：$d_{min} &amp;gt;=e+1$   助记：假设就检测一个错，而最小码距是1，那根本无法检测错误，因此至少e+1 解释:  设一码组A位于O点，另一码组B与A最小码距为d0。当A码组发生e个误码时，可以认为A的位置将移动到以O为圆心、以e为半径的圆上，但其位置不会超出此圆。">
@@ -334,6 +335,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Information-Theory/" itemprop="url" rel="index">
+                    <span itemprop="name">Information Theory</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -415,7 +438,7 @@
 </li>
 <li><p>$\displaystyle\eta = \frac{k}{n}$</p>
 </li>
-<li><p>系统码： 监督位都在后面</p>
+<li><p>系统码： 监督位都在后面 </p>
 </li>
 </ol>
 <ul>
@@ -470,7 +493,49 @@
 </ol>
 <h2 id="4-3-构造纠错码"><a href="#4-3-构造纠错码" class="headerlink" title="4.3 构造纠错码"></a>4.3 构造纠错码</h2><h3 id="4-3-1-简单重复码"><a href="#4-3-1-简单重复码" class="headerlink" title="4.3.1 简单重复码"></a>4.3.1 简单重复码</h3><p>发 001100  -&gt;  三重重复码 000，000，111，111，000，000 </p>
 <p>n重重复码 : 效率 = 1/n</p>
-<h3 id="4-3-2-汉明码-纠正1位错误"><a href="#4-3-2-汉明码-纠正1位错误" class="headerlink" title="4.3.2 汉明码 - 纠正1位错误"></a>4.3.2 汉明码 - 纠正1位错误</h3><h3 id="4-3-3-CRC-循环冗余校验码"><a href="#4-3-3-CRC-循环冗余校验码" class="headerlink" title="4.3.3 CRC 循环冗余校验码"></a>4.3.3 CRC 循环冗余校验码</h3><p>​                                                            —— Cyclic Redundancy Check</p>
+<h3 id="4-3-2-汉明码-纠正1位错误"><a href="#4-3-2-汉明码-纠正1位错误" class="headerlink" title="4.3.2 汉明码 - 纠正1位错误"></a>4.3.2 汉明码 - 纠正1位错误</h3><ol>
+<li>$2^r =  n+1  \to 狭义汉明码    ，2^r &gt;n+1 广义汉明码$</li>
+<li>监督矩阵[H]，确定信息码元和监督码元的关系</li>
+<li>生成矩阵[G],信息码A右乘G即得系统码B  掌握H、G的互换</li>
+<li>错误接受概率(实际误码率) $p = 1- [ (1-p_e)^n + C_n^1 p_e (1-p_e)^{n-1}]$</li>
+</ol>
+<p>$p_e  = 10^{-4} 时 p_{(7,4)} \approx 4.2* 10^{-7}$</p>
+<ol start="5">
+<li>$\eta = k/n =4/7 \approx 57\%$</li>
+</ol>
+<h3 id="4-3-3-CRC-循环冗余校验码"><a href="#4-3-3-CRC-循环冗余校验码" class="headerlink" title="4.3.3 CRC 循环冗余校验码"></a>4.3.3 CRC 循环冗余校验码</h3><p>​                                                            —— Cyclic Redundancy Check</p>
+<ol>
+<li><p>循环码是分组码 (n,k)  这里只讨论线性循环码</p>
+</li>
+<li><p>码字 &lt;=&gt; 多项式  左乘$x^c$模($x_n+1$) &lt;=&gt; 左移c位  涉及模二运算</p>
+</li>
+<li><p>生成多项式-&gt;生成矩阵-&gt;解决循环码编码</p>
+<p>定理： (n,k)循环码生成多项式g(x) 是 $x^n -1 的r次(n-k)因式$</p>
+</li>
+</ol>
+<ol start="4">
+<li>根据生成多项式$g(x) = x^3+x+1$ (1011)通过两种方法求循环码的码字表：</li>
+</ol>
+<ul>
+<li><p>求生成矩阵[G]</p>
+<p>[1011000,</p>
+<p>0101100,</p>
+<p>0010110,</p>
+<p>0001011]</p>
+<p>信息码 A(1:k) * G(k,n)  -&gt;     非系统码 B(1:n)</p>
+</li>
+<li><p>直接利用g(x)：</p>
+<p>信息码A(x)</p>
+<p>$x^{n-k}<em>A(x) = y</em>g(x) + r(x)$</p>
+<p>B(x) = A(x) + r(x)</p>
+</li>
+</ul>
+<ol start="5">
+<li><p>根据一个特定循环码字可求出所有校验子</p>
+<p>求传输错误后的B(x)’  = B(x) + e(x)</p>
+<p>把B(x)’ mod $g(x)$ , e(x)即为校验子</p>
+</li>
+</ol>
 
       
     </div>
@@ -493,6 +558,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Information-Theory/" rel="tag"># Information Theory</a>
+          
+        </div>
       
 
       
@@ -604,7 +675,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -615,7 +686,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
