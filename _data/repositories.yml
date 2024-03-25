@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - chuhuiyu
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - chuhuiyu/UNet-3d
+  - chuhuiyu/Inhibitory-Plasticity_Project-from-CompNeu
+  - chuhuiyu/Facial_Movement_Tracking
+  - chuhuiyu/chuhuiyu.github.io
+  - chuhuiyu/SVC_smo
