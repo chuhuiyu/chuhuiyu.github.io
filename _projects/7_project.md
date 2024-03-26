@@ -1,8 +1,8 @@
 ---
 layout: page
-title: onlineide
+title: onlineIDE
 description: ASE project
-img: assets/img/onlineIDE.jpg
+img: assets/img/onlineide.jpg
 importance: 4
 category: computerscience
 ---
