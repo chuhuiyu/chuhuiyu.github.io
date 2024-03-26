@@ -7,4 +7,5 @@ importance: 1
 category: neuroscience
 related_publications: false
 ---
-Tracking the movement of facial ROIs corresponding to whiskers, snout, eyelids, and mouth using Deep Learning methods.
+
+Sorely responsible for tracking the facial behavioral features of neonatal mice undergoing optogenetic experiments using Deep Learning methods. After tracking, subsequent data analysis (preprocessing and clustering) was performed. Cooperated with Dr. David Cabrera (Lohmann Group, Netherlands Institute for Neuroscience)

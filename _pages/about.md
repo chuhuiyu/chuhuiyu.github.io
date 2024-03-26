@@ -17,8 +17,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a Master student at Technical University of Munich, studying Informatics (Computer Science). My primary focus now is on synthetic biological intelligence, which embodies _In vitro_ neural networks from heterogeneous cell sources into a goal-directed environment. Such a closed-loop dynamic system could harness the inherent properties of neuronal cells to link silicon and BNN systems. I believe, in terms of research, it could lead to a better understanding of neurobiology, advance AI or machine-learning algorithms, and in terms of technique, silico-biological computational platforms could be built upon it.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Before having this particular interest, I was interested in medical imaging processing(esp. fMRI) and business intelligence(data mining on business data) when I did my Bachelor at Tongji University, Shanghai.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My long-standing interest in neuroscience keeps me thinking the possibility that two fields, computer science and neuroscience could learn from each other. It's facinating for me to work in an interdisciplinary team and do cool things together.
