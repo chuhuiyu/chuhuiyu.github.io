@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Data Mining practicum from Technical University of Munich.
+title: Data Mining practicum
 description: spark
 img: assets/img/datamining.jpg
 importance: 3
