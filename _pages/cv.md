@@ -1,8 +1,9 @@
 ---
 layout: page
 title: cv
-permalink: /assets/pdf/CV_HuiyuChu.pdf
+permalink: /cv/
 #description: My CV
+redirect: assets/pdf/CV_HuiyuChu.pdf
 nav: true
 nav_order: 4
 ---
