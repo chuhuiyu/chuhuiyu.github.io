@@ -4,7 +4,7 @@ title: Information Theory -4
 tags:
   - Information Theory
 categories:
-  - Information Theory
+  - Computer Science
 date: 2019-05-30 02:14:17
 thumbnail: /assets/img/Information-Theory-4/003.png
 ---
