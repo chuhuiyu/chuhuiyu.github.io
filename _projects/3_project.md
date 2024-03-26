@@ -4,7 +4,7 @@ title: Data Mining practicum from Technical University of Munich.
 description: spark
 img: assets/img/datamining.jpg
 importance: 3
-category: Computer Science
+category: computerscience
 ---
 
 Set up (Week 1 - 2)

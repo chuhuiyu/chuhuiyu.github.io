@@ -1,8 +1,8 @@
 ---
 layout: page
-title: fMRI study of Ultra-High Risk for Psychosis
-description: fMRI study using SPM
-img: assets/img/spm.jpg
+title: onlineide
+description: ASE project
+img: assets/img/onlineide.jpg
 importance: 4
 category: computerscience
 ---

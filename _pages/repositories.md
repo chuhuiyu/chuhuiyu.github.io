@@ -4,7 +4,7 @@ permalink: /repositories/
 title: repositories
 description: Here list my github statistics and public repositories.
 nav: true
-nav_order: 4
+nav_order: 6
 ---
 
 ## GitHub users

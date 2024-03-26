@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 5
-description: Starbuck Retail Demand Forecasting
+title: Starbuck Retail Demand Forecasting
+description: proposed a transformer-based model to predict starbucks retail demand. 
 img: assets/img/saleforecasting.jpg
 importance: 3
-category: Computer Science
+category: computerscience
 ---
 
 * Coordinate efforts using Spark to optimise the prediction model currently running in 82,320 Chinese Starbucks
